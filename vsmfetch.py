@@ -30,9 +30,9 @@ def compile(papers: list) -> dict:
         compilation["bibcode"].append(paper.bibcode)
         compilation["author"].append(";;".join(paper.author))
         compilation["year"].append(paper.year)
-        compilation["keyword"].append(";;".join(paper.keyword))
+        compilation["keyword"].append(";;".join(paper.keyword) if isinstance(paper.keyword, list) else "-")
         compilation["ads_url"].append(f"https://ui.adsabs.harvard.edu/abs/{paper.bibcode}/abstract")
-        compilation["url"].append(f"https://ui.adsabs.harvard.edu/link_gateway/{paper.bibcode}/{paper.esources[0]}")
+        compilation["url"].append(f"https://ui.adsabs.harvard.edu/link_gateway/{paper.bibcode}/{paper.esources[0]}" if isinstance(paper.esources, list) else "-")
 
     return compilation
 

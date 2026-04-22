@@ -3,6 +3,6 @@ keywords = [
     # "physics models"
 ]
 
-rows = 5
+rows = 1000
 
 output = "output.xlsx"
