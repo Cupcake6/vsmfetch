@@ -1,0 +1,8 @@
+keywords = [
+    "variable stars modeling",
+    # "physics models"
+]
+
+rows = 5
+
+output = "output.xlsx"
