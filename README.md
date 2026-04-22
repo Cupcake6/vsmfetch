@@ -1,2 +1,2 @@
-# vmsfetch
+# vsmfetch
 Small scipt
